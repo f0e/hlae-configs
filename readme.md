@@ -26,7 +26,7 @@ You can use the numpad arrow keys to traverse the demo, and press <kbd>o</kbd> t
 
 Recordings will save to your CS:GO game directory inside the `untitled_rec` folder. You can change this by adding `mirv_streams record name "[path]"` to your movie config.
 
-Each stream recording save to its own folder with the game audio separate. You can automatically combine these videos with the game audio by using the provided [create videos.bat](/create%20videos.bat) script. Just place it inside your HLAE recording folder (untitled_rec) and run it.
+Each stream recording saves to its own folder with the game audio separate. You can automatically combine these videos with the game audio by using the provided [create videos.bat](/create%20videos.bat) script. Just place it inside your HLAE recording folder (untitled_rec) and run it.
 
 ## configuration
 

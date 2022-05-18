@@ -1,6 +1,11 @@
-echo off
+@echo off
 
-:: get folders
+REM create compiled folder
+if not exist "compiled" ( 
+    mkdir "compiled"
+)
+
+REM get folders
 for /d %%f in ("take*") do ( 
 	echo - recording %%f -
 
