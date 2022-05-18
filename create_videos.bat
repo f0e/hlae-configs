@@ -1,6 +1,6 @@
 @echo off
 
-REM create compiled folder
+REM create output folder
 if not exist "compiled" ( 
     mkdir "compiled"
 )

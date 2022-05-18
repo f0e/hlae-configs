@@ -31,5 +31,5 @@ jobs:
           tag_name: ${{ steps.tag_version.outputs.new_tag }}
           files: |
             configs.zip
-            create videos.bat
+            create_videos.bat
           fail_on_unmatched_files: true
