@@ -22,7 +22,7 @@ jobs:
 
       - name: Archive configs
         working-directory: ${{env.GITHUB_WORKSPACE}}
-        run: zip *.cfg configs.zip
+        run: zip configs.zip *.cfg
 
       - name: Release
         uses: softprops/action-gh-release@v1
