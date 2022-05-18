@@ -65,17 +65,15 @@ I suggest using utvideo for the best quality recordings and fastest editing expe
 
 ### recording fps
 
-Higher = smoother blur (less visible frames), longer recording time. Good values are 900-1200
+Higher = smoother blur (less visible frames), longer recording time. Good values are 900-1200.
 
-## non-blur settings
+## **regular** settings
 
 ### recording quality
 
-Select a preset from [the list](#available-recording-presets)
+Select a preset from [the list](#available-recording-presets). You currently have to modify the quality for each stream in whichever config you're using if it's not a blur config.
 
-## blur settings
-
-These settings only apply to \_blur configs.
+## **blur** settings
 
 ### blur fps
 
@@ -91,8 +89,8 @@ If you want to use velocity in editing then you can make this higher than your f
 [new blur amount] = [old blur amount] × ([new fps] / [old fps])
 ```
 
-e.g. You want a video at 60fps with 1 blur amount, so you can instead record at 120fps with 2 blur amount
+e.g. You want a video at 60fps with 1 blur amount, so you can instead record at 120fps with 2 blur amount.
 
 ### blur quality
 
-Select a preset from [the list](#available-recording-presets)
+Select a preset from [the list](#available-recording-presets).
