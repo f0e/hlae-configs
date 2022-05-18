@@ -1,0 +1,21 @@
+name: Create Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Archive configs
+        uses: actions/upload-artifact@v3
+        with:
+          name: configs
+          path: *.cfg
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
