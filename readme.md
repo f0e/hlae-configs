@@ -16,9 +16,19 @@ These are my personal configs for recording CS:GO clips using HLAE. I've created
 | blur    | hlae_vm_blur.cfg | game, viewmodel             |
 | regular | hlae_adv.cfg     | game, depth, viewmodel, hud |
 
-You can create your own configs by copying one of these defaults and modifying the streams.
+You can create your own configs by copying one of these defaults and modifying the streams. If you add new streams, make sure to also reset them inside `hlae__base.cfg`.
 
-# configuration
+## usage
+
+`exec` the config you want to use, then type `commands` for a list of available commands.
+
+You can use the numpad arrow keys to traverse the demo, and press <kbd>o</kbd> to start/stop recording.
+
+Recordings will save to your CS:GO game directory inside the `untitled_rec` folder. You can change this by adding `mirv_streams record name "[path]"` to your movie config.
+
+Each stream recording save to its own folder with the game audio separate. You can automatically combine these videos with the game audio by using the provided [create videos.bat](/create%20videos.bat) script. Just place it inside your HLAE recording folder (untitled_rec) and run it.
+
+## configuration
 
 Recording settings are adjustable inside `hlae__settings.cfg`. See [settings](#settings) for explanations on what each setting does.
 

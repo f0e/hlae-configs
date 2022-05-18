@@ -30,5 +30,7 @@ jobs:
         with:
           body: ${{ steps.tag_version.outputs.changelog }}
           tag_name: ${{ steps.tag_version.outputs.new_tag }}
-          files: configs.zip
+          files: |
+            configs.zip
+            create videos.bat
           fail_on_unmatched_files: true
