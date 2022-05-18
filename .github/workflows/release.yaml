@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -17,15 +17,18 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Install zip
+        run: sudo apt-get install -y zip
+
       - name: Archive configs
-        uses: actions/upload-artifact@v3
-        with:
-          name: configs
-          path: '*.cfg'
+        working-directory: ${{env.GITHUB_WORKSPACE}}
+        run: zip *.cfg configs.zip
 
       - name: Release
         uses: softprops/action-gh-release@v1
         if: steps.tag_version.outputs.new_tag
         with:
+          body: ${{ steps.tag_version.outputs.changelog }}
           tag_name: ${{ steps.tag_version.outputs.new_tag }}
           files: configs.zip
+          fail_on_unmatched_files: true
