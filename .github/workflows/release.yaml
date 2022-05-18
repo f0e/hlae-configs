@@ -28,7 +28,6 @@ jobs:
         uses: softprops/action-gh-release@v1
         if: steps.tag_version.outputs.new_tag
         with:
-          body: ${{ steps.tag_version.outputs.changelog }}
           tag_name: ${{ steps.tag_version.outputs.new_tag }}
           files: |
             configs.zip
