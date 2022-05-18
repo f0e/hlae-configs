@@ -16,7 +16,7 @@ These are my personal configs for recording CS:GO clips using HLAE. I've created
 | blur    | hlae_vm_blur.cfg | game, viewmodel             |
 | regular | hlae_adv.cfg     | game, depth, viewmodel, hud |
 
-You can create your own configs by copying one of these defaults and modifying the streams. You might have to add
+You can create your own configs by copying one of these defaults and modifying the streams.
 
 # configuration
 
@@ -26,7 +26,7 @@ Recording settings are adjustable inside `hlae__settings.cfg`. See [settings](#s
 
 - [HLAE ☠️ (with ffmpeg)](https://www.advancedfx.org/download/)
 
-## optional
+### optional
 
 - [utvideo codec](https://github.com/umezawatakeshi/utvideo) (best format imo: smaller lossless recordings, fast editing)
 
@@ -51,23 +51,17 @@ extra options:
 
 I suggest using utvideo for the best quality recordings and fastest editing experience.
 
----
-
 ## general settings
 
 ### recording fps
 
 Higher = smoother blur (less visible frames), longer recording time. Good values are 900-1200
 
----
-
 ## non-blur settings
 
 ### recording quality
 
 Select a preset from [the list](#available-recording-presets)
-
----
 
 ## blur settings
 
