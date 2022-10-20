@@ -10,7 +10,7 @@ for /d %%f in ("take*") do (
 	echo - recording %%f -
 
 	REM get audio file
-	for %%a in ("%%f/audio_*.wav") do (
+	for %%a in ("%%f/audio.wav") do (
 		REM get videos
 		for /d %%n in ("%%f/*") do (
 			echo video: %%n
@@ -23,7 +23,7 @@ for /d %%f in ("take*") do (
 				REM line 5: output file (%%~xv = video extension)
 				ffmpeg ^
 					-loglevel error -hide_banner -stats ^
-					-i "%%f/%%n/%%v" -i "%%f/%%a" ^
+					-i "%%f/%%n/%%v" -i "%%a" ^
 					-map 0:v -map 1:a? ^
 					-c:v copy ^
 					compiled/%%f_%%n%%~xv
