@@ -32,4 +32,5 @@ jobs:
           files: |
             configs.zip
             create_videos.bat
+            compress_videos.bat
           fail_on_unmatched_files: true
